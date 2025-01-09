@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <h1>Formulário de Contato</h1>
+        <form action="" id="cct">
+            <label for="nome">Digite o nome:</label>
+            <input type="text" name="nome" id="nome" maxlength="200" placeholder="Seu nome" />
+            
+            <label for="mail">E-mail:</label>
+            <input type="email" name="mail" id="mail" maxlength="200" placeholder="Seu e-mail" />
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX" />
+            
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Sua senha" />
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <button id="showLocalStorage">Mostrar dados do Local Storage</button><br><br>
+        <button id="showSessionStorage">Mostrar dados do Session Storage</button><br><br>
+        <button id="clearSession">Limpar Session</button>
+        <div id="storeData">
+            <div id="localStorageData" class="storage-session"></div>
+            <div id="sessionStorageData" class="storage-session"></div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
