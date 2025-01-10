@@ -5,7 +5,7 @@ function validacao(){
     const telefone = document.querySelector('#telefone').value;
     const senha = document.querySelector('#senha').value;
 
-    * if (nome === '' || email === '' || mensagem === '') {
+    if (nome === '' || email === '' || mensagem === '') {
         alert('Preencha todos os campos!');
         return false;
         }
